@@ -287,4 +287,13 @@ playButton.addEventListener("click", () => {
   playMusic();
 });
 
+// initial actions
+// ask browser to scroll to the top of the page after refreshed
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
 bearCloudMove();
