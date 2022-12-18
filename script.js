@@ -9,7 +9,7 @@ const playButton = document.querySelector(".btn-play");
 const playMusic = function () {
   music.muted = false;
   music.src =
-    "https://drive.google.com/uc?export=download&id=1qrJ7qHH2do_5L8QG8NWMDXJdrlq40yD1";
+    "./song-final.mp3";
   music.play();
 };
 
@@ -273,7 +273,7 @@ const wordShow = function () {
 button.addEventListener("click", () => {
   newtl.pause();
   music.src =
-    "https://drive.google.com/uc?export=download&id=1qrJ7qHH2do_5L8QG8NWMDXJdrlq40yD1";
+    "./song-final.mp3";
   music.play();
   music.muted = true;
   skyIconsDisappear();
