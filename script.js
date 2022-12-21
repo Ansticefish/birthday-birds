@@ -184,7 +184,8 @@ const birdDrop = function () {
           {
             y: "1%",
             duration: 1.5,
-            ease: "expo.out"
+            ease: "expo.out",
+            onStart: playMusic
           }
         ]
       },
@@ -198,8 +199,7 @@ const playerShow = function () {
       keyframes: [
         {
           y: "50vh",
-          duration: 9,
-          onComplete: playMusic
+          duration: 9
         },
         {
           display: "block",
